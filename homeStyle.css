@@ -1,0 +1,77 @@
+/* Setting styles for the entire page (presets)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+/*allows for smooth scrolling of the mouse*/
+html{
+    scroll-behavior: smooth;
+}
+/* removes underline from the links*/
+a{ 
+    text-decoration: none;
+}
+/*removes list styling*/
+ul{
+    list-style: none;
+}
+/*styling for the nav bar*/
+.navbar{/* the "." referrencing the class in html*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: darkorchid;
+
+}
+/*styling for the logo*/
+.logo{
+    padding-left: 10px;
+}
+.logo-text{
+    margin-left: auto;
+    font-size: 1.5em;
+}
+/*menu bar styling*/
+.menubar{
+    width: 50%;
+    margin-left: 0.5em;
+}
+.list{
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
+}
+/*style the list buttons*/
+.list-items a{
+    margin-right: 80px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    transition: 0.4s;
+}
+.list-items a:hover{
+    color:aqua;
+}
+/*styluing for the body, h1 text and img*/
+body, h1, img{
+    margin: 0;
+    padding: 0;
+}
+/*styling the section1*/
+.section1{
+    position: relative;
+    background: lightgray;
+    overflow: visible;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
