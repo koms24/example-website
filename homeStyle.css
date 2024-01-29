@@ -72,6 +72,71 @@ body, h1, img{
     width: 100%;
     top: 0;
     left: 0;
+    animation: fadeInFromMiddle 1.5s ease-out forwards;
+}
+/* setup the placeholder for the mosque images*/
+.slideshow-container{
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+}
+/* style the mosque images*/
+.pic1, .pic2, .pic3, .pic4, .pic5{
+    display: contents;
+    animation: fade 2s ease;
+}
+/* sizing the image*/
+.section1 img{
+    width: 100%;
+    height: 90vh;
+}
+/* animation to fade content in from the middle of the a certain point*/
+@keyframes fadeInFromMiddle{
+    0%{
+        opacity:0 ;
+        transform: translateY(10%)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+/* styling the welcome text arabic and english*/
+.welcome h1{
+    animation: textMoveLeft 1.5s ease-in-out;
+    text-align: right;
+    font-family: 'Segoe UI' , Verdana, sans-serif;
+    font-size: 3em;
+    color: #392529; 
+    margin-bottom: 10px;
+}
+@keyframes textMoveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.welcome h2{
     opacity: 0;
-
+    animation: textMoveRight 1.5s ease-in-out forwards;
+    animation-delay: 2s;
+    text-align: left;
+    font-family: 'Segoe UI' , Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #392529; 
+    margin-bottom: 10px;
+}
+@keyframes textMoveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
