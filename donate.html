@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href = "donate.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class = "navbar">
+        <div class = "menu">
+            <div class = "layer1"></div>
+            <div class = "layer2"></div>
+            <div class = "layer3"></div>
+        </div> 
+        <div class = "logo">
+            <span class = "logo-text">
+                <span style = "padding-right: 0.5px; padding-top: 0.5px; display: inline-block;">
+                    <img class = "logoimg" src="mages/Screenshot 2023-12-25 at 3.04.00 PM.png"></img> </span> 
+                    <span style = "color:lightsalmon; font-size: 1.1em; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Your mosque name</span> 
+        </div>
+        <div class = "menubar">
+            <ul class = "list">
+                <li class = "list-items"><a href = "index.html" >HOME</a></li>
+                <li class = "list-items"><a href = "donate.html" >DONATE</a></li>
+                <li class = "list-items"><a href = "contact.html" >CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class = "donation-image">
+        <img src = "images/zakat_.png" class = "dimg">
+    </div>
+    <form action = "action">
+        <h1>Masjid Donation Page</h1>
+
+    <button type="button" onclick="redirectToCashApp()">Donate with Cash App</button>
+    <button type="button" onclick="redirectToZelle()">Donate with Zelle</button>
+    <button type="button" onclick="redirectToWire()">Wire Transfer</button>
+    <button type = "button" onclick="redirectToHome()">Cancel</button>
+    </form>
+        <script>
+            function redirectToCashApp() {
+                // put your cashapp name in the link
+                window.location.href = 'https://cash.app/$yourcashappname';
+            }
+
+            function redirectToZelle() {
+                alert("Our Zelle information is masjid community center\nZelle account: name@example.com");
+            }
+            function redirectToHome(){
+                window.location.href="index.html"
+            }
+            
+        </script>
+    </form>
+</body>
+</html>
